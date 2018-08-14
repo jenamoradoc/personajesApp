@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{personaje.nombre}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <img [src]="personaje.imagen" >
+
+    <h3 align="center">Especie: {{personaje.especie}}</h3>
+  
+    <h3 align="center">Planeta Natal: {{personaje.planetaNatal}}</h3>
+  
+    <button ion-button 
+            block
+            color="dark"
+            (click)="irahome()">Regresar a Home </button>
+
+</ion-content>

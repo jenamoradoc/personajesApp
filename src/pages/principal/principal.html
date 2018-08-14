@@ -1,0 +1,48 @@
+
+<ion-header>
+
+  <ion-navbar color="black">
+    <ion-title>Personajes App</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-content class="card-background-page">
+
+        <ion-card>
+          <img src="../../assets/imgs/flags/jediflag.jpg" />
+          <div class="card-title">Jedi order</div>
+          <div class="card-subtitle">7 Jedi Masters</div>
+          <button color="principal"
+                  ion-button
+                  block
+                  (click)="jedimasters()">
+            Jedi Order
+          </button>
+        </ion-card>
+      
+        <ion-card>
+          <img src="../../assets/imgs/flags/sithempire.jpg"/>
+          <div class="card-title">Sith Empire</div>
+          <div class="card-subtitle">7 Sith Lords</div>
+          <button color="secondary"
+                  ion-button
+                  block
+                  (click)="sithlords()">
+            Sith Empire
+          </button>
+        </ion-card>
+      
+      <!--  <ion-card>
+          <img src="img/card-sf.png"/>
+          <div class="card-title">San Francisco</div>
+          <div class="card-subtitle">72 Listings</div>
+        </ion-card>-->
+      
+    
+      </ion-content>
+
+</ion-content>
