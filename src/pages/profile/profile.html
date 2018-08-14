@@ -6,13 +6,36 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>profile</ion-title>
+  <ion-navbar color="black">
+        <button ion-button menuToggle icon-only (click)="mostrarMenu()">
+            <ion-icon name='menu'></ion-icon>
+        </button>
+    <ion-title>Pofile</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+    <ion-card>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/imgs/profile/Jar_Jar.jpg">
+          </ion-avatar>
+          <h2>Jar Jar Binks</h2>
+          <p>Sith Supreme Shadow Lider</p>
+        </ion-item>
+      
+        <img src="assets/imgs/profile/jarsith.jpg">
+      
+        <ion-card-content>
+          <p>The dark side is best hidden in the shadows. And from those shadows small actions can create EMPIRES.Misa Misa Okiday ? </p>
+        </ion-card-content>
+      
+      
+      
+      </ion-card>
 
 </ion-content>

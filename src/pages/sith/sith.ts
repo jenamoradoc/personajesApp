@@ -16,7 +16,7 @@ export class SithPage {
   siths:personaje[]=[]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.siths = SITHLORDS.splice(0);
+    this.siths = SITHLORDS;
   }
 
   ionViewDidLoad() {

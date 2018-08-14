@@ -6,13 +6,58 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>settings</ion-title>
+  <ion-navbar color="black">
+      <button ion-button menuToggle icon-only (click)="mostrarMenu()">
+          <ion-icon name='menu'></ion-icon>
+      </button>
+    <ion-title>Settings</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+    <h4>Todo List</h4>
+      <ion-item>
+        <ion-label>Crear clones bajo la sombra</ion-label>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Comenzar una guerra entre el imperio y la federacion de comercio</ion-label>
+        <ion-checkbox  color="dark" checked="true"></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Dar el poder del senado a Palpatine</ion-label>
+          <ion-checkbox color="dark" checked="true"></ion-checkbox>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>Liberar los clones y ganar la guerra </ion-label>
+          <ion-checkbox  color="dark" checked="false"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Ejecutar orden 66</ion-label>
+            <ion-checkbox color="dark" checked="false"></ion-checkbox>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label>Gobernar todo desde las sombras</ion-label>
+            <ion-checkbox  color="dark" checked="false"></ion-checkbox>
+          </ion-item>
+
+          <button ion-button 
+                  block 
+                  (click)="SithLordsList()" >
+                Ver lista de lords Siths</button>
+        
+                
+          <button ion-button 
+          block 
+          (click)="JediMasterList()" >
+        Ver lista de Maestros JEdi</button>
 
 </ion-content>

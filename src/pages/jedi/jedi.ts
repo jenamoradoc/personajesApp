@@ -21,7 +21,9 @@ export class JediPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
-      this.jedis = JEDIMASTERS.splice(0);
+    
+    // this.jedis = JEDIMASTERS.splice(0);
+    this.jedis = JEDIMASTERS;
   }
 
   ionViewDidLoad() {

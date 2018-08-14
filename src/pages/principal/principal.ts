@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,  } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 
 import { JediPage, SithPage } from "../index.paginas";
 
@@ -22,7 +22,7 @@ export class PrincipalPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    //private menuCtrl: MenuController
+    private menuCtrl: MenuController
   
   ) {
   }
@@ -38,5 +38,11 @@ export class PrincipalPage {
   sithlords(){
     this.navCtrl.push(SithPage);  
   }
+
+  mostrarMenu(){
+    this.menuCtrl.toggle();
+  }
+
+  
 
 }

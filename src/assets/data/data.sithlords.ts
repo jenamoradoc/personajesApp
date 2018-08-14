@@ -32,7 +32,7 @@ export const SITHLORDS = [
       },
       {
         nombre: "Darth_Vader",
-        imagen: 'assets/imgs/jedi/Darth_Vader.png',
+        imagen: 'assets/imgs/sith/Darth_Vader.jpg',
         especie: 'Humana',
         planetaNatal:'Tatooine'
       },
